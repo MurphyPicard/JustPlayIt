@@ -1,5 +1,7 @@
 # README
 
+please go to this site to see the app - something.heroku
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
