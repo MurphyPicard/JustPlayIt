@@ -1,12 +1,25 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.welcome_heading {
-  color: #f00;
-  font-size: 88px;
+.welcome-div1 {
+  background-color: #fbf2ba;
+  height: 300px;
 }
-
-.welcome_rules {
-  color: #0f0;
+.welcome-heading {
+  color: #ef1501;
+  font-size: 88px;
+  padding-top: 35px;
+  text-align: center;
+}
+.welcome-rules {
+  color: #e78800;
   font-size: 33px;
+  text-align: center;
+}
+.welcome-div2 {
+  background-color: #fbdeba;
+}
+.welcome-play {
+  font-size: 88px;
+  text-align: center;
 }
