@@ -9,6 +9,7 @@ class ArticlesController < ApplicationController
 
   # GET videos/1/articles/1
   def show
+    
   end
 
   # GET videos/1/articles/new
