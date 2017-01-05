@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @article.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @article.body %>
+</p>
+
+
+<%= link_to 'Edit', edit_video_article_path(@article.video, @article) %> |
+<%= link_to 'Back', video_articles_path(@article.video) %>
