@@ -1,24 +1,26 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong></strong>
-  <%= @video.artist %>
-</p>
+<div class="transparent-show-div">
 
-<p>
-  <strong></strong>
-  <%= @video.song %>
-</p>
+  <p style="font-size:30px">
+    <%= @video.artist %>
+  </p>
 
-<p>
-  <strong>click the pic to play in youtube</strong>
-  <a href="<%= @video.vid_url %>"><img src="<%= @video.pic_url %>" alt="<%= @video.song %>"></a>
-</p>
+  <p style="font-size:24px">
+    <%= @video.song %>
+  </p>
 
-<p>
-  <strong>VIDEO URL: </strong>
-  <%= @video.vid_url %>
-</p>
+  <p>
+    <strong></strong>
+    <a href="<%= @video.vid_url %>"><img src="<%= @video.pic_url %>" alt="<%= @video.song %>"></a>
+  </p>
+
+  <p>
+    <strong>Click the Pic!</strong>
+    <%= %>
+  </p>
+
+</div>
 
 <iframe width="300" height="300" src="https://www.youtube.com/embed/QtXby3twMmI" frameborder="0" allowfullscreen></iframe>
 
