@@ -3,7 +3,7 @@ class CreateVideos < ActiveRecord::Migration[5.0]
     create_table :videos do |t|
       t.string :artist
       t.string :song
-      t.string :url
+      t.string :pic_url
       t.boolean :lyrics
 
       t.timestamps

@@ -1,19 +1,26 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Artist:</strong>
+  <strong></strong>
   <%= @video.artist %>
 </p>
 
 <p>
-  <strong>Song:</strong>
+  <strong></strong>
   <%= @video.song %>
 </p>
 
 <p>
-  <strong>Url:</strong>
-  <%= @video.url %>
+  <strong>click the pic to play in youtube</strong>
+  <a href="<%= @video.vid_url %>"><img src="<%= @video.pic_url %>" alt="<%= @video.song %>"></a>
 </p>
+
+<p>
+  <strong>VIDEO URL: </strong>
+  <%= @video.vid_url %>
+</p>
+
+<iframe width="300" height="300" src="https://www.youtube.com/embed/QtXby3twMmI" frameborder="0" allowfullscreen></iframe>
 
 <p>
   <strong>Lyrics:</strong>

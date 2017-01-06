@@ -55,11 +55,12 @@ class VideosController < ApplicationController
   # DELETE /videos/1
   # DELETE /videos/1.json
   def destroy
-    @vid = Video.find(params[:id])
-    @vid.articles.each do |art|
-      art.delete
-    end
-    @video.delete
+    # I wrote the next 4 lines as an alternative to dependant: :destroy
+    # @vid = Video.find(params[:id])
+    # @vid.articles.each do |art|
+    #   art.delete
+    # end
+    @video.destroy
     respond_to do |format|
       format.html { redirect_to videos_url, notice: 'Video was successfully destroyed.' }
       format.json { head :no_content }
@@ -74,6 +75,6 @@ class VideosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def video_params
-      params.require(:video).permit(:artist, :song, :url, :lyrics)
+      params.require(:video).permit(:artist, :song, :pic_url, :vid_url, :lyrics)
     end
 end

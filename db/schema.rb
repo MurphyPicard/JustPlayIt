@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170105155159) do
+ActiveRecord::Schema.define(version: 20170106155144) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,10 +27,11 @@ ActiveRecord::Schema.define(version: 20170105155159) do
   create_table "videos", force: :cascade do |t|
     t.string   "artist"
     t.string   "song"
-    t.string   "url"
+    t.string   "pic_url"
     t.boolean  "lyrics"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "vid_url"
   end
 
   add_foreign_key "articles", "videos"

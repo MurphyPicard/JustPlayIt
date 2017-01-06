@@ -1,3 +1,3 @@
 class Video < ApplicationRecord
-  has_many :articles
+  has_many :articles, dependent: :destroy
 end
