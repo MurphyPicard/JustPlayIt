@@ -1,5 +1,5 @@
-<h1>Listing articles</h1>
-
+<h1 style="color: white;">Listing articles</h1>
+<br>
 <table>
   <tr>
     <th>Title</th>
@@ -8,18 +8,18 @@
     <th></th>
     <th></th>
   </tr>
-
+<br>
 <% @articles.each do |article| %>
   <tr>
     <td><%= article.title %></td>
     <td><%= article.body %></td>
-    <td><%= link_to 'Show', [article.video, article] %></td>
-    <td><%= link_to 'Edit', edit_video_article_path(article.video, article) %></td>
-    <td><%= link_to 'Destroy', [article.video, article], :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Show', [article.video, article], :style => "color: green;" %></td>
+    <td><%= link_to 'Edit', edit_video_article_path(article.video, article), :style => "color: yellow;" %></td>
+    <td><%= link_to 'Destroy', [article.video, article], :confirm => 'Are you sure? This is permanent!', :method => :delete, :style => "color: red;" %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Article', new_video_article_path(params[:video_id]) %>
+<%= link_to 'New Article', new_video_article_path(params[:video_id]), :style => "color: white; font-style: italic;" %>

@@ -1,6 +1,6 @@
-<h1>Editing article</h1>
+<h1 style="color: white;">Edit your thoughts here: </h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', [@article.video, @article] %> |
-<%= link_to 'Back', video_articles_path(@article.video) %>
+<%= link_to 'Show', [@article.video, @article], :style => 'color: white; font-style: italic;' %> |
+<%= link_to 'See all comments', video_articles_path(@article.video), :style => 'color: white; font-style: italic;' %>
