@@ -2,14 +2,14 @@
 
 <p id="notice"><%= notice %></p>
 
-<h1>Videos</h1>
+<h1 class="videos-index"><span class="h1-span">Just Click the Pics to </span>Watch or Sing?</h1>
 
 <table>
   <thead>
     <tr>
-      <th>--Artist--</th>
-      <th>--Song--</th>
-      <th>--Picture--</th>
+      <th>a a A A Artist - - - - - - - - - - - - - -</th>
+      <th>s s S S Song - - - - - - - - - - - - - - -</th>
+      <th>p p P P Pic - - - - - - - - - - - - - - - </th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,7 +19,7 @@
       <tr>
         <td><%= video.artist %></td>
         <td><%= video.song %></td>
-        <td><iframe width="100" height="100" src="<%= video.pic_url %>" ></iframe></td>
+        <td><a href="<%= video.vid_url %>"><iframe width="100" height="100" src="<%= video.pic_url %>" ></iframe></a></td>
         <td><%= link_to 'Info', video %></td>
         <td><%= link_to 'Edit', edit_video_path(video) %></td>
         <td><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %></td>

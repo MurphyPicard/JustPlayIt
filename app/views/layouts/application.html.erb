@@ -11,6 +11,10 @@
   <body>
 
     <%= yield %>
-    <%= link_to 'go back to the videos page', videos_path %>
+
+    <footer>
+    <%= link_to 'BACK TO VIDEOS PAGE', videos_path, :class => "backtovideos" %>
+    </footer>
+
   </body>
 </html>

@@ -7,6 +7,7 @@ body {
 
 .welcome-div1 {
   height: 300px;
+  margin-bottom: -100px;
 }
 .welcome-heading {
   color: #f37c1a;
@@ -19,12 +20,28 @@ body {
   font-size: 33px;
   text-align: center;
 }
-.marley-gif {
-  align-self: center;
+
+.image-div {
+  margin: 0 auto;
+  height: 600px;
+  width: 1000px;
 }
+.welcome-image {
+  margin: 5px;
+  height: 100%;
+  width: 100%;
+}
+
 .welcome-div2 {
+  margin-top: -150px;
+  margin-bottom: 200px;
 }
 .welcome-play {
-  font-size: 88px;
+  font-size: 200px;
   text-align: center;
+  margin: 5px;
+}
+.welcome-play a:link {
+  background-color: rgba(0, 0, 0, .6);
+  text-decoration: none;
 }
