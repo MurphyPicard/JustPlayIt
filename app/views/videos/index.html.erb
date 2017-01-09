@@ -25,6 +25,7 @@
         <td class="index-edit"><%= link_to 'Edit', edit_video_path(video), {:style => 'color: #cc0; text-decoration: none;'}%></td>
         <td class="index-delete"><%= link_to 'Destroy', video, :style => 'color: #d00; text-decoration: none;', method: :delete, data: { confirm: 'Are you sure?' }%></td>
         <td class="index-thoughts"><%= link_to 'Thoughts?', new_video_article_path(video), {:style => 'color: #FFF; text-decoration: none;'} %></td>
+        <td><%= video.articles.count %></td>
       </tr>
     <% end %>
   </tbody>
