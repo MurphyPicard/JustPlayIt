@@ -1,26 +1,17 @@
 # README
 
-please go to this site to see the app - something.heroku
+Please go to http://ara-justplay.herokuapp.com/ to see this app :-)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Please go to https://murphypicard.github.io/ to see my other projects.
 
-Things you may want to cover:
 
-* Ruby version
+I used Rails 5.0.1 and postgresql to make a site called JustPlayIt!
 
-* System dependencies
+Although I expect to be the only user and this site will be used more for
+demonstration purposes, any user can CRUD any videos they wish.  That is, I (or
+you, if someone is reading this) can create new videos to sing along with, read
+some info on those videos, and update delete them as I (you) wish.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+When I have some free time, I would like to make many of the links more
+pleasing to the eye and I would like to work on some cool hover effects like
+the initial play button burning when you hover over it.
