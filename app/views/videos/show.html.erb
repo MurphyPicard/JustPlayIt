@@ -27,14 +27,13 @@
   <%= @video.lyrics %>
 </p> -->
 
-<div class="">
+<div class="thoughts-div">
   <% @vid.articles.each do |art| %>
-  <%= art.title %>
-  <%= art.body %>
+  <p><%= art.title%> - <%= art.body %></p>
+  <br>
   <% end %>
 </div>
 
 <br>
 <br>
 <%= link_to 'Edit This Video', edit_video_path(@video) %> |
-<%= link_to 'Back to Videos', videos_path %>
