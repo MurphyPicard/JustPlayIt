@@ -13,12 +13,14 @@ p {
   padding-top: 10px;
 }
 th {
-  color: yellow;
+  color: #cccc00;
+  font-size: 24px;
+  text-decoration: x-x;
 }
 
 td {
   font-size: 16px;
-  color: tan;
+  color: #FFF;
 }
 
 .transparent-show-div {
@@ -45,4 +47,7 @@ td {
   font-size: 36px;
   color: white;
   font-style: oblique;
+}
+.index-delete {
+  color: blue;
 }

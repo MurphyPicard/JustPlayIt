@@ -14,5 +14,6 @@
  *= require_self
  */
 footer .backtovideos {
-  color: blue;
+  color: green;
+  font-style: italic;
 }
